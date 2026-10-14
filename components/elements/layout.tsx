@@ -5,7 +5,10 @@ export const Title: FC<ComponentProps<"h1">> = ({
   children,
   ...props
 }) => (
-  <h1 style={{ fontSize: "1rem", margin: 0, ...style }} {...props}>
+  <h1
+    style={{ fontSize: "1.1rem", fontWeight: 800, margin: 0, ...style }}
+    {...props}
+  >
     {children}
   </h1>
 )
@@ -15,7 +18,7 @@ export const Header: FC<{ children: ReactNode }> = ({ children }) => (
     style={{
       alignItems: "center",
       backgroundColor: "var(--surface)",
-      borderBottom: "1px solid var(--rule)",
+      borderBottom: "3px solid var(--accent)",
       display: "flex",
       gap: "1rem",
       height: "var(--header-h)",

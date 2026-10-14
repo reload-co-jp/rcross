@@ -11,14 +11,14 @@ describe("Title", () => {
   it("renders as h1", () => {
     render(<Title>Page title</Title>)
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      "Page title",
+      "Page title"
     )
   })
 
   it("merges custom style with defaults", () => {
     render(<Title style={{ color: "red" }}>Styled</Title>)
     const heading = screen.getByText("Styled")
-    expect(heading.style.fontSize).toBe("1rem")
+    expect(heading.style.fontSize).toBe("1.1rem")
     expect(heading.style.color).toBe("red")
   })
 })
@@ -28,7 +28,7 @@ describe("Header", () => {
     render(
       <Header>
         <span>content</span>
-      </Header>,
+      </Header>
     )
     const header = screen.getByText("content").closest("header")
     expect(header).not.toBeNull()
@@ -40,7 +40,7 @@ describe("Main", () => {
     render(
       <Main>
         <span>body</span>
-      </Main>,
+      </Main>
     )
     expect(screen.getByRole("main")).toHaveTextContent("body")
   })
@@ -51,7 +51,7 @@ describe("Footer", () => {
     render(
       <Footer>
         <p>&copy; My organization</p>
-      </Footer>,
+      </Footer>
     )
     expect(screen.getByText("© My organization")).toBeInTheDocument()
   })

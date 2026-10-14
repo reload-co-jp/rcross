@@ -18,11 +18,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <Header>
           <Title>
             <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
-              世界史クロスビュー
+              🌏 世界史クロスビュー
             </Link>
           </Title>
-          <nav style={{ fontSize: ".875rem" }}>
-            <Link href="/about/">使い方・データ方針</Link>
+          <nav style={{ fontSize: ".8rem", whiteSpace: "nowrap" }}>
+            <Link href="/about/">使い方</Link>
           </nav>
         </Header>
         {children}
