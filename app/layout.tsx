@@ -1,9 +1,14 @@
-import { Footer, Header, Main, Title } from "@/components/elements/layout"
+import Link from "next/link"
+import { Header, Title } from "@/components/elements/layout"
 import "./reset.css"
 
 export const metadata = {
-  title: "Page title",
-  description: "Page description",
+  title: {
+    default: "世界史クロスビュー",
+    template: "%s | 世界史クロスビュー",
+  },
+  description:
+    "世界史の出来事を地域・ジャンルを超えて同じ時間軸に並べ、同時代の動きを比較できる年表。",
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -11,12 +16,16 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="ja">
       <body>
         <Header>
-          <Title>Page title</Title>
+          <Title>
+            <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+              世界史クロスビュー
+            </Link>
+          </Title>
+          <nav style={{ fontSize: ".875rem" }}>
+            <Link href="/about/">使い方・データ方針</Link>
+          </nav>
         </Header>
-        <Main>{children}</Main>
-        <Footer>
-          <p>&copy; My organization</p>
-        </Footer>
+        {children}
       </body>
     </html>
   )

@@ -1,0 +1,1793 @@
+[
+  {
+    "id": "sumer",
+    "name": "シュメール文明",
+    "nameEn": "Sumer",
+    "type": "period",
+    "startYear": -3500,
+    "endYear": -2004,
+    "startYearMin": -4500,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa"],
+    "genres": ["politics", "society", "science"],
+    "summary": "メソポタミア南部の都市文明。楔形文字を発達させ、ウルなどの都市国家が栄えた。終了はウル第3王朝の滅亡を目安とする。",
+    "relatedIds": ["code-of-hammurabi", "ancient-egypt"],
+    "sources": [
+      {
+        "title": "Wikipedia: Sumer",
+        "url": "https://en.wikipedia.org/wiki/Sumer"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ancient-egypt",
+    "name": "古代エジプト（王朝時代）",
+    "nameEn": "Ancient Egypt",
+    "aliases": ["エジプト王朝", "ファラオ"],
+    "type": "period",
+    "startYear": -3100,
+    "endYear": -30,
+    "startYearMin": -3200,
+    "startYearMax": -3000,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa"],
+    "genres": ["politics", "religion", "arts"],
+    "summary": "上下エジプトの統一から、プトレマイオス朝がローマに併合されるまでの王朝時代。開始年代には幅がある。",
+    "relatedIds": ["giza-pyramid", "kush", "roman-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ancient Egypt",
+        "url": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "caral",
+    "name": "カラル（ノルテ・チコ文明）",
+    "nameEn": "Norte Chico civilization",
+    "aliases": ["カラル＝スーペ"],
+    "type": "period",
+    "startYear": -3000,
+    "endYear": -1800,
+    "startYearMin": -3500,
+    "datePrecision": "approximate",
+    "regions": ["south-america"],
+    "genres": ["society", "politics"],
+    "summary": "ペルー北中部沿岸に成立したアメリカ大陸最古級の複合社会。大型の祭祀建造物を残す。",
+    "relatedIds": ["sumer"],
+    "sources": [
+      {
+        "title": "Wikipedia: Norte Chico civilization",
+        "url": "https://en.wikipedia.org/wiki/Norte_Chico_civilization"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "indus",
+    "name": "インダス文明",
+    "nameEn": "Indus Valley Civilisation",
+    "aliases": ["ハラッパー文化"],
+    "type": "period",
+    "startYear": -2600,
+    "endYear": -1900,
+    "startYearMin": -3300,
+    "endYearMax": -1300,
+    "datePrecision": "approximate",
+    "regions": ["south-asia"],
+    "genres": ["society", "economy"],
+    "summary": "インダス川流域の都市文明。代表値は成熟期ハラッパー文化。モヘンジョ・ダロなど計画都市で知られる。",
+    "relatedIds": ["sumer", "vedic-period"],
+    "sources": [
+      {
+        "title": "Wikipedia: Indus Valley Civilisation",
+        "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "giza-pyramid",
+    "name": "ギザの大ピラミッド建造",
+    "nameEn": "Great Pyramid of Giza",
+    "type": "event",
+    "startYear": -2560,
+    "startYearMin": -2600,
+    "startYearMax": -2500,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa"],
+    "genres": ["arts", "science"],
+    "summary": "古王国第4王朝クフ王のピラミッド。完成年代は推定。",
+    "relatedIds": ["ancient-egypt"],
+    "sources": [
+      {
+        "title": "Wikipedia: Great Pyramid of Giza",
+        "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "code-of-hammurabi",
+    "name": "ハンムラビ法典",
+    "nameEn": "Code of Hammurabi",
+    "type": "event",
+    "startYear": -1754,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa"],
+    "genres": ["politics", "society"],
+    "summary": "古バビロニアのハンムラビ王が定めた法典。石碑に楔形文字で刻まれた。年代は推定。",
+    "relatedIds": ["sumer"],
+    "sources": [
+      {
+        "title": "Wikipedia: Code of Hammurabi",
+        "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "shang",
+    "name": "殷（商）",
+    "nameEn": "Shang dynasty",
+    "aliases": ["商"],
+    "type": "period",
+    "startYear": -1600,
+    "endYear": -1046,
+    "datePrecision": "disputed",
+    "regions": ["east-asia"],
+    "genres": ["politics", "religion"],
+    "summary": "黄河流域の王朝。甲骨文字を残す。始まりと終わりの年代には諸説ある。",
+    "relatedIds": ["zhou"],
+    "sources": [
+      {
+        "title": "Wikipedia: Shang dynasty",
+        "url": "https://en.wikipedia.org/wiki/Shang_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "lapita",
+    "name": "ラピタ文化",
+    "nameEn": "Lapita culture",
+    "type": "process",
+    "startYear": -1600,
+    "endYear": -500,
+    "datePrecision": "approximate",
+    "regions": ["oceania", "southeast-asia"],
+    "genres": ["exploration", "society", "arts"],
+    "summary": "特徴的な土器を伴い、メラネシアから西ポリネシアへと海を越えて広がった文化。",
+    "relatedIds": ["polynesian-aotearoa"],
+    "sources": [
+      {
+        "title": "Wikipedia: Lapita culture",
+        "url": "https://en.wikipedia.org/wiki/Lapita_culture"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "vedic-period",
+    "name": "ヴェーダ時代",
+    "nameEn": "Vedic period",
+    "type": "period",
+    "startYear": -1500,
+    "endYear": -500,
+    "datePrecision": "approximate",
+    "regions": ["south-asia"],
+    "genres": ["religion", "society"],
+    "summary": "ヴェーダ文献が成立した北インドの時代。のちの宗教・社会制度の基盤となった。",
+    "relatedIds": ["indus", "buddha"],
+    "sources": [
+      {
+        "title": "Wikipedia: Vedic period",
+        "url": "https://en.wikipedia.org/wiki/Vedic_period"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "olmec",
+    "name": "オルメカ文明",
+    "nameEn": "Olmecs",
+    "type": "period",
+    "startYear": -1200,
+    "endYear": -400,
+    "datePrecision": "approximate",
+    "regions": ["mesoamerica-caribbean"],
+    "genres": ["society", "arts", "religion"],
+    "summary": "メキシコ湾岸に栄えたメソアメリカ初期の文明。巨石人頭像で知られる。",
+    "relatedIds": ["maya-classic", "teotihuacan"],
+    "sources": [
+      {
+        "title": "Wikipedia: Olmecs",
+        "url": "https://en.wikipedia.org/wiki/Olmecs"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "bronze-age-collapse",
+    "name": "後期青銅器時代の崩壊",
+    "nameEn": "Late Bronze Age collapse",
+    "type": "event",
+    "startYear": -1200,
+    "endYear": -1150,
+    "datePrecision": "disputed",
+    "regions": ["west-asia-north-africa", "europe"],
+    "genres": ["war", "society", "environment"],
+    "summary": "東地中海の諸王国・交易網が相次いで衰退・崩壊した時期。原因には諸説ある。",
+    "relatedIds": ["ancient-egypt", "ancient-greece"],
+    "sources": [
+      {
+        "title": "Wikipedia: Late Bronze Age collapse",
+        "url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "zhou",
+    "name": "周",
+    "nameEn": "Zhou dynasty",
+    "type": "period",
+    "startYear": -1046,
+    "endYear": -256,
+    "startYearMin": -1122,
+    "startYearMax": -1027,
+    "datePrecision": "disputed",
+    "regions": ["east-asia"],
+    "genres": ["politics", "religion"],
+    "summary": "殷を倒した王朝。後半は春秋・戦国時代と呼ばれ、諸子百家が活躍した。開始年は諸説ある。",
+    "relatedIds": ["shang", "confucius", "qin-unification"],
+    "sources": [
+      {
+        "title": "Wikipedia: Zhou dynasty",
+        "url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "kush",
+    "name": "クシュ王国",
+    "nameEn": "Kingdom of Kush",
+    "type": "period",
+    "startYear": -1070,
+    "endYear": 350,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa", "west-asia-north-africa"],
+    "genres": ["politics", "economy"],
+    "summary": "ナイル川中流域（ヌビア）の王国。一時エジプトを支配し、のちメロエを中心に栄えた。",
+    "relatedIds": ["ancient-egypt", "aksum"],
+    "sources": [
+      {
+        "title": "Wikipedia: Kingdom of Kush",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kush"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ancient-greece",
+    "name": "古代ギリシア",
+    "nameEn": "Ancient Greece",
+    "aliases": ["ポリス"],
+    "type": "period",
+    "startYear": -800,
+    "endYear": -146,
+    "datePrecision": "approximate",
+    "regions": ["europe"],
+    "genres": ["politics", "arts", "science", "religion"],
+    "summary": "アルカイック期から、ローマによるギリシア本土併合までのポリス世界。哲学・演劇・民主政が発達した。",
+    "relatedIds": ["persian-wars", "alexander", "roman-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ancient Greece",
+        "url": "https://en.wikipedia.org/wiki/Ancient_Greece"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "achaemenid",
+    "name": "アケメネス朝",
+    "nameEn": "Achaemenid Empire",
+    "aliases": ["ペルシア帝国"],
+    "type": "period",
+    "startYear": -550,
+    "endYear": -330,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa", "central-asia", "south-asia"],
+    "genres": ["politics"],
+    "summary": "キュロス2世が建てたペルシアの帝国。王の道や州（サトラペイア）制度で広大な領域を統治した。",
+    "relatedIds": ["persian-wars", "alexander"],
+    "sources": [
+      {
+        "title": "Wikipedia: Achaemenid Empire",
+        "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "confucius",
+    "name": "孔子",
+    "nameEn": "Confucius",
+    "type": "event",
+    "startYear": -551,
+    "endYear": -479,
+    "datePrecision": "approximate",
+    "regions": ["east-asia"],
+    "genres": ["people", "religion"],
+    "summary": "春秋時代の思想家。儒家の祖。生没年は伝承に基づく。",
+    "relatedIds": ["zhou", "buddha"],
+    "sources": [
+      {
+        "title": "Wikipedia: Confucius",
+        "url": "https://en.wikipedia.org/wiki/Confucius"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "buddha",
+    "name": "ゴータマ・ブッダ",
+    "nameEn": "The Buddha",
+    "aliases": ["釈迦", "仏陀"],
+    "type": "event",
+    "startYear": -480,
+    "startYearMin": -563,
+    "startYearMax": -400,
+    "datePrecision": "disputed",
+    "regions": ["south-asia"],
+    "genres": ["people", "religion"],
+    "summary": "仏教の開祖。活動年代には大きく分けて複数の説がある。代表値は目安。",
+    "relatedIds": ["buddhism-spread", "confucius", "vedic-period"],
+    "sources": [
+      {
+        "title": "Wikipedia: The Buddha",
+        "url": "https://en.wikipedia.org/wiki/The_Buddha"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "persian-wars",
+    "name": "ペルシア戦争",
+    "nameEn": "Greco-Persian Wars",
+    "type": "event",
+    "startYear": -499,
+    "endYear": -449,
+    "datePrecision": "approximate",
+    "regions": ["europe", "west-asia-north-africa"],
+    "genres": ["war"],
+    "summary": "アケメネス朝とギリシア諸ポリスの戦争。マラトンの戦い、サラミスの海戦などを含む。",
+    "relatedIds": ["achaemenid", "ancient-greece"],
+    "sources": [
+      {
+        "title": "Wikipedia: Greco-Persian Wars",
+        "url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "alexander",
+    "name": "アレクサンドロス大王の東方遠征",
+    "nameEn": "Wars of Alexander the Great",
+    "type": "event",
+    "startYear": -334,
+    "endYear": -323,
+    "datePrecision": "exact",
+    "regions": [
+      "europe",
+      "west-asia-north-africa",
+      "central-asia",
+      "south-asia"
+    ],
+    "genres": ["war", "people"],
+    "summary": "マケドニア王アレクサンドロス3世がアケメネス朝を滅ぼし、インダス川流域まで遠征した。",
+    "relatedIds": ["achaemenid", "ancient-greece", "maurya"],
+    "sources": [
+      {
+        "title": "Wikipedia: Wars of Alexander the Great",
+        "url": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "maurya",
+    "name": "マウリヤ朝",
+    "nameEn": "Maurya Empire",
+    "type": "period",
+    "startYear": -322,
+    "endYear": -185,
+    "datePrecision": "approximate",
+    "regions": ["south-asia"],
+    "genres": ["politics", "religion"],
+    "summary": "チャンドラグプタが建てたインド初の統一王朝。アショーカ王は仏教を保護した。",
+    "relatedIds": ["buddhism-spread", "han-dynasty", "alexander"],
+    "sources": [
+      {
+        "title": "Wikipedia: Maurya Empire",
+        "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "buddhism-spread",
+    "name": "仏教の伝播",
+    "nameEn": "Spread of Buddhism",
+    "type": "process",
+    "startYear": -260,
+    "endYear": 700,
+    "datePrecision": "approximate",
+    "regions": ["south-asia", "central-asia", "east-asia", "southeast-asia"],
+    "genres": ["religion", "society"],
+    "summary": "アショーカ王期以降、仏教が中央アジア・東アジア・東南アジアへ広がった過程。範囲は目安。",
+    "relatedIds": ["buddha", "maurya", "silk-road", "han-dynasty"],
+    "sources": [
+      {
+        "title": "Wikipedia: Silk Road transmission of Buddhism",
+        "url": "https://en.wikipedia.org/wiki/Silk_Road_transmission_of_Buddhism"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "qin-unification",
+    "name": "秦の中国統一",
+    "nameEn": "Qin's wars of unification",
+    "type": "event",
+    "startYear": -221,
+    "datePrecision": "exact",
+    "regions": ["east-asia"],
+    "genres": ["politics", "war"],
+    "summary": "秦王政（始皇帝）が戦国の諸国を滅ぼし中国を統一した。",
+    "relatedIds": ["zhou", "han-dynasty"],
+    "sources": [
+      {
+        "title": "Wikipedia: Qin dynasty",
+        "url": "https://en.wikipedia.org/wiki/Qin_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "han-dynasty",
+    "name": "漢",
+    "nameEn": "Han dynasty",
+    "aliases": ["前漢", "後漢"],
+    "type": "period",
+    "startYear": -206,
+    "endYear": 220,
+    "startYearMax": -202,
+    "datePrecision": "approximate",
+    "regions": ["east-asia"],
+    "genres": ["politics", "society"],
+    "summary": "中国史における王朝。前漢と後漢に区分される。開始年は前206年・前202年の両説がある。",
+    "relatedIds": ["roman-empire", "maurya", "silk-road", "qin-unification"],
+    "sources": [
+      {
+        "title": "Wikipedia: Han dynasty",
+        "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "silk-road",
+    "name": "シルクロード交易",
+    "nameEn": "Silk Road",
+    "type": "process",
+    "startYear": -130,
+    "endYear": 1453,
+    "datePrecision": "approximate",
+    "regions": [
+      "east-asia",
+      "central-asia",
+      "west-asia-north-africa",
+      "south-asia",
+      "europe"
+    ],
+    "genres": ["economy", "exploration"],
+    "summary": "ユーラシアを東西に結んだ交易路網。漢の西域進出を起点とし、オスマン帝国の台頭頃までを目安とする。",
+    "relatedIds": [
+      "han-dynasty",
+      "roman-empire",
+      "buddhism-spread",
+      "mongol-empire"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Silk Road",
+        "url": "https://en.wikipedia.org/wiki/Silk_Road"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "hopewell",
+    "name": "ホープウェル文化",
+    "nameEn": "Hopewell tradition",
+    "type": "period",
+    "startYear": -100,
+    "endYear": 500,
+    "datePrecision": "approximate",
+    "regions": ["north-america"],
+    "genres": ["society", "economy", "religion"],
+    "summary": "北米東部の河川流域に広がった文化伝統。墳丘や広域交易網で知られる。",
+    "relatedIds": ["cahokia"],
+    "sources": [
+      {
+        "title": "Wikipedia: Hopewell tradition",
+        "url": "https://en.wikipedia.org/wiki/Hopewell_tradition"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "teotihuacan",
+    "name": "テオティワカン",
+    "nameEn": "Teotihuacan",
+    "type": "period",
+    "startYear": -100,
+    "endYear": 550,
+    "datePrecision": "approximate",
+    "regions": ["mesoamerica-caribbean"],
+    "genres": ["politics", "religion", "arts"],
+    "summary": "メキシコ中央高原の大都市。太陽のピラミッドなどを持ち、広範囲に影響を及ぼした。",
+    "relatedIds": ["olmec", "maya-classic", "aztec"],
+    "sources": [
+      {
+        "title": "Wikipedia: Teotihuacan",
+        "url": "https://en.wikipedia.org/wiki/Teotihuacan"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "roman-empire",
+    "name": "ローマ帝国",
+    "nameEn": "Roman Empire",
+    "type": "period",
+    "startYear": -27,
+    "endYear": 476,
+    "datePrecision": "approximate",
+    "regions": ["europe", "west-asia-north-africa"],
+    "genres": ["politics", "war"],
+    "summary": "アウグストゥスの即位から西ローマ帝国の滅亡まで。東方は東ローマ帝国として存続した。",
+    "relatedIds": ["han-dynasty", "ancient-greece", "byzantine", "silk-road"],
+    "sources": [
+      {
+        "title": "Wikipedia: Roman Empire",
+        "url": "https://en.wikipedia.org/wiki/Roman_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "funan",
+    "name": "扶南",
+    "nameEn": "Funan",
+    "type": "period",
+    "startYear": 50,
+    "endYear": 550,
+    "datePrecision": "disputed",
+    "regions": ["southeast-asia"],
+    "genres": ["politics", "economy"],
+    "summary": "メコン川下流域の国家。インド・中国間の海上交易の拠点となった。年代は主に中国史料に基づき諸説ある。",
+    "relatedIds": ["khmer", "buddhism-spread"],
+    "sources": [
+      {
+        "title": "Wikipedia: Funan",
+        "url": "https://en.wikipedia.org/wiki/Funan"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "aksum",
+    "name": "アクスム王国",
+    "nameEn": "Kingdom of Aksum",
+    "type": "period",
+    "startYear": 100,
+    "endYear": 940,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa"],
+    "genres": ["politics", "economy", "religion"],
+    "summary": "エチオピア高原北部の王国。紅海交易で栄え、4世紀にキリスト教を受容した。",
+    "relatedIds": ["kush", "roman-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Kingdom of Aksum",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "moche",
+    "name": "モチェ文化",
+    "nameEn": "Moche culture",
+    "type": "period",
+    "startYear": 100,
+    "endYear": 800,
+    "datePrecision": "approximate",
+    "regions": ["south-america"],
+    "genres": ["arts", "society"],
+    "summary": "ペルー北部沿岸の文化。精巧な土器や灌漑農業で知られる。",
+    "relatedIds": ["tiwanaku", "caral"],
+    "sources": [
+      {
+        "title": "Wikipedia: Moche culture",
+        "url": "https://en.wikipedia.org/wiki/Moche_culture"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "sasanian",
+    "name": "サーサーン朝",
+    "nameEn": "Sasanian Empire",
+    "aliases": ["ササン朝"],
+    "type": "period",
+    "startYear": 224,
+    "endYear": 651,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa", "central-asia"],
+    "genres": ["politics", "religion"],
+    "summary": "イランの王朝。ローマ・東ローマ帝国と抗争し、ゾロアスター教を保護した。",
+    "relatedIds": ["roman-empire", "byzantine", "islamic-caliphates"],
+    "sources": [
+      {
+        "title": "Wikipedia: Sasanian Empire",
+        "url": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "maya-classic",
+    "name": "マヤ文明（古典期）",
+    "nameEn": "Classic Maya",
+    "type": "period",
+    "startYear": 250,
+    "endYear": 900,
+    "datePrecision": "approximate",
+    "regions": ["mesoamerica-caribbean"],
+    "genres": ["politics", "science", "arts"],
+    "summary": "ユカタン半島周辺の都市国家群が最も栄えた時期。暦法・文字を発達させた。",
+    "relatedIds": ["olmec", "teotihuacan"],
+    "sources": [
+      {
+        "title": "Wikipedia: Maya civilization",
+        "url": "https://en.wikipedia.org/wiki/Maya_civilization"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ghana-empire",
+    "name": "ガーナ王国",
+    "nameEn": "Ghana Empire",
+    "aliases": ["ワガドゥ"],
+    "type": "period",
+    "startYear": 300,
+    "endYear": 1200,
+    "datePrecision": "disputed",
+    "regions": ["sub-saharan-africa"],
+    "genres": ["politics", "economy"],
+    "summary": "西アフリカ・サヘル地域の王国。金と塩のサハラ交易で栄えた。成立年代には諸説ある。",
+    "relatedIds": ["trans-saharan", "mali-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ghana Empire",
+        "url": "https://en.wikipedia.org/wiki/Ghana_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "gupta",
+    "name": "グプタ朝",
+    "nameEn": "Gupta Empire",
+    "type": "period",
+    "startYear": 320,
+    "endYear": 550,
+    "datePrecision": "approximate",
+    "regions": ["south-asia"],
+    "genres": ["politics", "arts", "science"],
+    "summary": "北インドの王朝。サンスクリット文学や数学・天文学が発達した。",
+    "relatedIds": ["maurya", "sasanian"],
+    "sources": [
+      {
+        "title": "Wikipedia: Gupta Empire",
+        "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "byzantine",
+    "name": "東ローマ帝国",
+    "nameEn": "Byzantine Empire",
+    "aliases": ["ビザンツ帝国"],
+    "type": "period",
+    "startYear": 395,
+    "endYear": 1453,
+    "startYearMin": 330,
+    "datePrecision": "disputed",
+    "regions": ["europe", "west-asia-north-africa"],
+    "genres": ["politics", "religion"],
+    "summary": "ローマ帝国の東半分。コンスタンティノープルを首都とした。起点は330年（遷都）・395年（東西分割）など諸説ある。",
+    "relatedIds": [
+      "roman-empire",
+      "fall-of-constantinople",
+      "sasanian",
+      "crusades"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Byzantine Empire",
+        "url": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "tiwanaku",
+    "name": "ティワナク",
+    "nameEn": "Tiwanaku",
+    "type": "period",
+    "startYear": 500,
+    "endYear": 1000,
+    "datePrecision": "approximate",
+    "regions": ["south-america"],
+    "genres": ["politics", "religion"],
+    "summary": "ティティカカ湖南岸を中心としたアンデスの国家。",
+    "relatedIds": ["moche", "inca"],
+    "sources": [
+      {
+        "title": "Wikipedia: Tiwanaku",
+        "url": "https://en.wikipedia.org/wiki/Tiwanaku"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "tang",
+    "name": "唐",
+    "nameEn": "Tang dynasty",
+    "type": "period",
+    "startYear": 618,
+    "endYear": 907,
+    "datePrecision": "exact",
+    "regions": ["east-asia", "central-asia"],
+    "genres": ["politics", "arts", "religion"],
+    "summary": "長安を都とした中国の王朝。律令制を整え、国際色豊かな文化が栄えた。",
+    "relatedIds": ["talas", "silk-road", "islamic-caliphates"],
+    "sources": [
+      {
+        "title": "Wikipedia: Tang dynasty",
+        "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "hijra",
+    "name": "ヒジュラ（聖遷）",
+    "nameEn": "Hijrah",
+    "type": "event",
+    "startYear": 622,
+    "datePrecision": "exact",
+    "regions": ["west-asia-north-africa"],
+    "genres": ["religion", "people"],
+    "summary": "ムハンマドがメッカからメディナへ移住した出来事。イスラーム暦の紀元とされる。",
+    "relatedIds": ["islamic-caliphates"],
+    "sources": [
+      {
+        "title": "Wikipedia: Hijrah",
+        "url": "https://en.wikipedia.org/wiki/Hijrah"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "islamic-caliphates",
+    "name": "イスラーム帝国（正統カリフ〜アッバース朝）",
+    "nameEn": "Caliphate",
+    "aliases": ["ウマイヤ朝", "アッバース朝"],
+    "type": "period",
+    "startYear": 632,
+    "endYear": 1258,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa", "central-asia"],
+    "genres": ["politics", "religion", "science"],
+    "summary": "ムハンマド没後のカリフ国家。アッバース朝のバグダードはモンゴル軍により陥落した。",
+    "relatedIds": ["hijra", "sasanian", "talas", "mongol-empire", "tang"],
+    "sources": [
+      {
+        "title": "Wikipedia: Caliphate",
+        "url": "https://en.wikipedia.org/wiki/Caliphate"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "srivijaya",
+    "name": "シュリーヴィジャヤ",
+    "nameEn": "Srivijaya",
+    "type": "period",
+    "startYear": 650,
+    "endYear": 1288,
+    "endYearMin": 1025,
+    "endYearMax": 1377,
+    "datePrecision": "disputed",
+    "regions": ["southeast-asia"],
+    "genres": ["politics", "economy", "religion"],
+    "summary": "スマトラ島を拠点にマラッカ海峡の交易を支配した海洋国家。衰退時期には諸説ある。",
+    "relatedIds": ["funan", "majapahit", "buddhism-spread"],
+    "sources": [
+      {
+        "title": "Wikipedia: Srivijaya",
+        "url": "https://en.wikipedia.org/wiki/Srivijaya"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "trans-saharan",
+    "name": "サハラ交易",
+    "nameEn": "Trans-Saharan trade",
+    "type": "process",
+    "startYear": 700,
+    "endYear": 1600,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa", "west-asia-north-africa"],
+    "genres": ["economy", "religion"],
+    "summary": "ラクダの隊商によるサハラ砂漠縦断交易。金・塩・奴隷などが運ばれ、イスラームの伝播も伴った。",
+    "relatedIds": ["ghana-empire", "mali-empire", "songhai"],
+    "sources": [
+      {
+        "title": "Wikipedia: Trans-Saharan trade",
+        "url": "https://en.wikipedia.org/wiki/Trans-Saharan_trade"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "talas",
+    "name": "タラス河畔の戦い",
+    "nameEn": "Battle of Talas",
+    "type": "event",
+    "startYear": 751,
+    "datePrecision": "exact",
+    "regions": ["central-asia"],
+    "genres": ["war"],
+    "summary": "唐とアッバース朝の軍が中央アジアで衝突した戦い。製紙法西伝の契機とする説があるが異論もある。",
+    "relatedIds": ["tang", "islamic-caliphates"],
+    "sources": [
+      {
+        "title": "Wikipedia: Battle of Talas",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Talas"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "charlemagne",
+    "name": "カール大帝の戴冠",
+    "nameEn": "Coronation of Charlemagne",
+    "type": "event",
+    "startYear": 800,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["politics", "religion"],
+    "summary": "フランク王カールがローマ教皇からローマ皇帝として戴冠された。",
+    "relatedIds": ["byzantine"],
+    "sources": [
+      {
+        "title": "Wikipedia: Charlemagne",
+        "url": "https://en.wikipedia.org/wiki/Charlemagne"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "khmer",
+    "name": "アンコール朝（クメール王朝）",
+    "nameEn": "Khmer Empire",
+    "type": "period",
+    "startYear": 802,
+    "endYear": 1431,
+    "datePrecision": "approximate",
+    "regions": ["southeast-asia"],
+    "genres": ["politics", "religion", "arts"],
+    "summary": "カンボジアを中心とした王朝。アンコール・ワットなどの寺院を建造した。",
+    "relatedIds": ["funan", "srivijaya"],
+    "sources": [
+      {
+        "title": "Wikipedia: Khmer Empire",
+        "url": "https://en.wikipedia.org/wiki/Khmer_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "song",
+    "name": "宋",
+    "nameEn": "Song dynasty",
+    "aliases": ["北宋", "南宋"],
+    "type": "period",
+    "startYear": 960,
+    "endYear": 1279,
+    "datePrecision": "exact",
+    "regions": ["east-asia"],
+    "genres": ["politics", "economy", "science"],
+    "summary": "中国の王朝。科挙官僚制が確立し、商業・印刷・火薬などの技術が発達した。モンゴルにより滅亡。",
+    "relatedIds": ["tang", "mongol-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Song dynasty",
+        "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "cahokia",
+    "name": "カホキア",
+    "nameEn": "Cahokia",
+    "type": "period",
+    "startYear": 1050,
+    "endYear": 1350,
+    "datePrecision": "approximate",
+    "regions": ["north-america"],
+    "genres": ["society", "religion"],
+    "summary": "ミシシッピ文化最大の集落遺跡。モンクス・マウンドなどの巨大な土塁を持つ。",
+    "relatedIds": ["hopewell"],
+    "sources": [
+      {
+        "title": "Wikipedia: Cahokia",
+        "url": "https://en.wikipedia.org/wiki/Cahokia"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "crusades",
+    "name": "十字軍",
+    "nameEn": "Crusades",
+    "type": "event",
+    "startYear": 1096,
+    "endYear": 1291,
+    "datePrecision": "approximate",
+    "regions": ["europe", "west-asia-north-africa"],
+    "genres": ["war", "religion"],
+    "summary": "西欧キリスト教勢力による聖地への一連の遠征。範囲は第1回十字軍からアッコン陥落までを目安とする。",
+    "relatedIds": ["byzantine", "islamic-caliphates"],
+    "sources": [
+      {
+        "title": "Wikipedia: Crusades",
+        "url": "https://en.wikipedia.org/wiki/Crusades"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "great-zimbabwe",
+    "name": "グレート・ジンバブエ",
+    "nameEn": "Great Zimbabwe",
+    "type": "period",
+    "startYear": 1100,
+    "endYear": 1450,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa"],
+    "genres": ["politics", "economy", "arts"],
+    "summary": "南部アフリカの石造都市。インド洋交易と結びついた王国の中心地だった。",
+    "relatedIds": ["zheng-he"],
+    "sources": [
+      {
+        "title": "Wikipedia: Great Zimbabwe",
+        "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "kamakura",
+    "name": "鎌倉幕府",
+    "nameEn": "Kamakura shogunate",
+    "type": "period",
+    "startYear": 1185,
+    "endYear": 1333,
+    "startYearMax": 1192,
+    "datePrecision": "disputed",
+    "regions": ["east-asia"],
+    "genres": ["politics", "war"],
+    "summary": "日本最初の本格的な武家政権。成立年は1185年・1192年など諸説ある。",
+    "relatedIds": ["mongol-empire", "song"],
+    "sources": [
+      {
+        "title": "Wikipedia: Kamakura shogunate",
+        "url": "https://en.wikipedia.org/wiki/Kamakura_shogunate"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "mongol-empire",
+    "name": "モンゴル帝国",
+    "nameEn": "Mongol Empire",
+    "type": "period",
+    "startYear": 1206,
+    "endYear": 1368,
+    "endYearMin": 1294,
+    "datePrecision": "disputed",
+    "regions": [
+      "east-asia",
+      "central-asia",
+      "west-asia-north-africa",
+      "europe"
+    ],
+    "genres": ["politics", "war"],
+    "summary": "チンギス・カンが建てた帝国。ユーラシアの大部分を支配した。終期は分裂（1294年頃）や元の北遷（1368年）など捉え方により異なる。",
+    "relatedIds": [
+      "song",
+      "islamic-caliphates",
+      "kamakura",
+      "silk-road",
+      "black-death"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Mongol Empire",
+        "url": "https://en.wikipedia.org/wiki/Mongol_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "delhi-sultanate",
+    "name": "デリー・スルターン朝",
+    "nameEn": "Delhi Sultanate",
+    "type": "period",
+    "startYear": 1206,
+    "endYear": 1526,
+    "datePrecision": "approximate",
+    "regions": ["south-asia"],
+    "genres": ["politics", "religion"],
+    "summary": "デリーを都とした5つのイスラーム王朝の総称。ムガル帝国に取って代わられた。",
+    "relatedIds": ["mughal", "mongol-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia: Delhi Sultanate",
+        "url": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "mali-empire",
+    "name": "マリ帝国",
+    "nameEn": "Mali Empire",
+    "type": "period",
+    "startYear": 1235,
+    "endYear": 1670,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa"],
+    "genres": ["politics", "economy", "religion"],
+    "summary": "西アフリカの帝国。スンジャタ・ケイタが建国し、トンブクトゥは学問の中心となった。",
+    "relatedIds": ["ghana-empire", "mansa-musa", "songhai", "trans-saharan"],
+    "sources": [
+      {
+        "title": "Wikipedia: Mali Empire",
+        "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "rapa-nui-moai",
+    "name": "ラパ・ヌイのモアイ制作",
+    "nameEn": "Moai",
+    "type": "period",
+    "startYear": 1250,
+    "endYear": 1500,
+    "datePrecision": "approximate",
+    "regions": ["oceania"],
+    "genres": ["arts", "religion"],
+    "summary": "イースター島（ラパ・ヌイ）で巨大石像モアイが制作された時期。年代は推定。",
+    "relatedIds": ["polynesian-aotearoa", "lapita"],
+    "sources": [
+      {
+        "title": "Wikipedia: Moai",
+        "url": "https://en.wikipedia.org/wiki/Moai"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "polynesian-aotearoa",
+    "name": "ポリネシア人のアオテアロア到達",
+    "nameEn": "Settlement of New Zealand",
+    "aliases": ["マオリ", "ニュージーランド"],
+    "type": "event",
+    "startYear": 1280,
+    "startYearMin": 1250,
+    "startYearMax": 1300,
+    "datePrecision": "disputed",
+    "regions": ["oceania"],
+    "genres": ["exploration", "society"],
+    "summary": "東ポリネシアからの航海者がニュージーランドに定住した。年代は放射性炭素年代などに基づく推定。",
+    "relatedIds": ["lapita", "rapa-nui-moai"],
+    "sources": [
+      {
+        "title": "Wikipedia: History of New Zealand",
+        "url": "https://en.wikipedia.org/wiki/History_of_New_Zealand"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "majapahit",
+    "name": "マジャパヒト王国",
+    "nameEn": "Majapahit",
+    "type": "period",
+    "startYear": 1293,
+    "endYear": 1527,
+    "datePrecision": "approximate",
+    "regions": ["southeast-asia"],
+    "genres": ["politics", "economy"],
+    "summary": "ジャワ島東部を中心とした王国。最盛期には島嶼部東南アジアの広範囲に影響を及ぼした。",
+    "relatedIds": ["srivijaya", "zheng-he"],
+    "sources": [
+      {
+        "title": "Wikipedia: Majapahit",
+        "url": "https://en.wikipedia.org/wiki/Majapahit"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ottoman",
+    "name": "オスマン帝国",
+    "nameEn": "Ottoman Empire",
+    "type": "period",
+    "startYear": 1299,
+    "endYear": 1922,
+    "datePrecision": "approximate",
+    "regions": ["west-asia-north-africa", "europe"],
+    "genres": ["politics", "war", "religion"],
+    "summary": "アナトリアに興り、バルカン・中東・北アフリカを支配した帝国。",
+    "relatedIds": ["fall-of-constantinople", "byzantine", "ww1"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ottoman Empire",
+        "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "mansa-musa",
+    "name": "マンサ・ムーサのメッカ巡礼",
+    "nameEn": "Mansa Musa",
+    "type": "event",
+    "startYear": 1324,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa", "west-asia-north-africa"],
+    "genres": ["people", "religion", "economy"],
+    "summary": "マリ帝国の王マンサ・ムーサが大量の金を携えて巡礼し、カイロなどでその富が語り継がれた。",
+    "relatedIds": ["mali-empire", "trans-saharan"],
+    "sources": [
+      {
+        "title": "Wikipedia: Mansa Musa",
+        "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "aztec",
+    "name": "アステカ（テノチティトラン）",
+    "nameEn": "Aztec Empire",
+    "type": "period",
+    "startYear": 1325,
+    "endYear": 1521,
+    "datePrecision": "approximate",
+    "regions": ["mesoamerica-caribbean"],
+    "genres": ["politics", "religion"],
+    "summary": "テノチティトランを中心とした国家。開始はテノチティトラン建設の伝承年、終了はスペインによる征服。",
+    "relatedIds": ["teotihuacan", "columbus", "inca"],
+    "sources": [
+      {
+        "title": "Wikipedia: Aztec Empire",
+        "url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "black-death",
+    "name": "黒死病",
+    "nameEn": "Black Death",
+    "aliases": ["ペスト"],
+    "type": "event",
+    "startYear": 1346,
+    "endYear": 1353,
+    "datePrecision": "approximate",
+    "regions": ["europe", "west-asia-north-africa", "central-asia"],
+    "genres": ["environment", "society"],
+    "summary": "ユーラシア西部・北アフリカで流行したペストの大流行。ヨーロッパ人口の大きな割合が失われた。",
+    "relatedIds": ["mongol-empire", "silk-road"],
+    "sources": [
+      {
+        "title": "Wikipedia: Black Death",
+        "url": "https://en.wikipedia.org/wiki/Black_Death"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ming",
+    "name": "明",
+    "nameEn": "Ming dynasty",
+    "type": "period",
+    "startYear": 1368,
+    "endYear": 1644,
+    "datePrecision": "exact",
+    "regions": ["east-asia"],
+    "genres": ["politics", "economy"],
+    "summary": "モンゴル（元）を北に退けて成立した中国の王朝。",
+    "relatedIds": ["mongol-empire", "zheng-he", "edo"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ming dynasty",
+        "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "zheng-he",
+    "name": "鄭和の南海遠征",
+    "nameEn": "Ming treasure voyages",
+    "type": "event",
+    "startYear": 1405,
+    "endYear": 1433,
+    "datePrecision": "exact",
+    "regions": [
+      "east-asia",
+      "southeast-asia",
+      "south-asia",
+      "west-asia-north-africa",
+      "sub-saharan-africa"
+    ],
+    "genres": ["exploration", "politics", "economy"],
+    "summary": "明の永楽帝らの命で鄭和が率いた計7回の大艦隊遠征。東アフリカ沿岸にまで達した。",
+    "relatedIds": ["ming", "majapahit", "age-of-discovery"],
+    "sources": [
+      {
+        "title": "Wikipedia: Ming treasure voyages",
+        "url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "age-of-discovery",
+    "name": "大航海時代",
+    "nameEn": "Age of Discovery",
+    "type": "process",
+    "startYear": 1415,
+    "endYear": 1600,
+    "endYearMax": 1650,
+    "datePrecision": "approximate",
+    "regions": [
+      "europe",
+      "sub-saharan-africa",
+      "south-asia",
+      "southeast-asia",
+      "north-america",
+      "mesoamerica-caribbean",
+      "south-america"
+    ],
+    "genres": ["exploration", "economy"],
+    "summary": "ポルトガル・スペインを先駆けとするヨーロッパ諸国の海洋進出。範囲は目安で、定義により異なる。",
+    "relatedIds": ["columbus", "zheng-he", "atlantic-slave-trade"],
+    "sources": [
+      {
+        "title": "Wikipedia: Age of Discovery",
+        "url": "https://en.wikipedia.org/wiki/Age_of_Discovery"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "inca",
+    "name": "インカ帝国",
+    "nameEn": "Inca Empire",
+    "aliases": ["タワンティンスーユ"],
+    "type": "period",
+    "startYear": 1438,
+    "endYear": 1533,
+    "datePrecision": "approximate",
+    "regions": ["south-america"],
+    "genres": ["politics", "society"],
+    "summary": "クスコを都としたアンデスの帝国。道路網と結縄（キープ）による記録で知られる。スペインに征服された。",
+    "relatedIds": ["tiwanaku", "aztec", "age-of-discovery"],
+    "sources": [
+      {
+        "title": "Wikipedia: Inca Empire",
+        "url": "https://en.wikipedia.org/wiki/Inca_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "gutenberg",
+    "name": "活版印刷の実用化",
+    "nameEn": "Printing press",
+    "aliases": ["グーテンベルク"],
+    "type": "event",
+    "startYear": 1450,
+    "startYearMin": 1440,
+    "datePrecision": "approximate",
+    "regions": ["europe"],
+    "genres": ["science", "arts"],
+    "summary": "マインツのグーテンベルクが金属活字による印刷を実用化した。",
+    "relatedIds": ["reformation", "song"],
+    "sources": [
+      {
+        "title": "Wikipedia: Printing press",
+        "url": "https://en.wikipedia.org/wiki/Printing_press"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "fall-of-constantinople",
+    "name": "コンスタンティノープル陥落",
+    "nameEn": "Fall of Constantinople",
+    "type": "event",
+    "startYear": 1453,
+    "datePrecision": "exact",
+    "regions": ["europe", "west-asia-north-africa"],
+    "genres": ["war", "politics"],
+    "summary": "オスマン帝国のメフメト2世が東ローマ帝国の首都を攻略した。",
+    "relatedIds": ["byzantine", "ottoman"],
+    "sources": [
+      {
+        "title": "Wikipedia: Fall of Constantinople",
+        "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "songhai",
+    "name": "ソンガイ帝国",
+    "nameEn": "Songhai Empire",
+    "type": "period",
+    "startYear": 1464,
+    "endYear": 1591,
+    "datePrecision": "approximate",
+    "regions": ["sub-saharan-africa"],
+    "genres": ["politics", "economy"],
+    "summary": "ニジェール川流域の帝国。ガオを都とし、モロッコ軍に敗れて崩壊した。",
+    "relatedIds": ["mali-empire", "trans-saharan"],
+    "sources": [
+      {
+        "title": "Wikipedia: Songhai Empire",
+        "url": "https://en.wikipedia.org/wiki/Songhai_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "columbus",
+    "name": "コロンブスの大西洋横断",
+    "nameEn": "Voyages of Christopher Columbus",
+    "type": "event",
+    "startYear": 1492,
+    "datePrecision": "exact",
+    "regions": ["europe", "mesoamerica-caribbean"],
+    "genres": ["exploration", "people"],
+    "summary": "スペイン王室の支援を受けたコロンブスがカリブ海の島々に到達した。",
+    "relatedIds": ["age-of-discovery", "aztec", "atlantic-slave-trade"],
+    "sources": [
+      {
+        "title": "Wikipedia: Voyages of Christopher Columbus",
+        "url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "atlantic-slave-trade",
+    "name": "大西洋奴隷貿易",
+    "nameEn": "Atlantic slave trade",
+    "type": "process",
+    "startYear": 1501,
+    "endYear": 1867,
+    "datePrecision": "approximate",
+    "regions": [
+      "sub-saharan-africa",
+      "europe",
+      "north-america",
+      "mesoamerica-caribbean",
+      "south-america"
+    ],
+    "genres": ["economy", "society"],
+    "summary": "アフリカの人々を強制的に南北アメリカ・カリブ海へ移送した奴隷貿易。範囲は目安。",
+    "relatedIds": ["age-of-discovery", "haitian-revolution"],
+    "sources": [
+      {
+        "title": "Wikipedia: Atlantic slave trade",
+        "url": "https://en.wikipedia.org/wiki/Atlantic_slave_trade"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "reformation",
+    "name": "宗教改革",
+    "nameEn": "Reformation",
+    "type": "event",
+    "startYear": 1517,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["religion", "politics"],
+    "summary": "ルターの『95か条の論題』を起点とするキリスト教改革運動。プロテスタント諸派が成立した。",
+    "relatedIds": ["gutenberg", "westphalia"],
+    "sources": [
+      {
+        "title": "Wikipedia: Reformation",
+        "url": "https://en.wikipedia.org/wiki/Reformation"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "mughal",
+    "name": "ムガル帝国",
+    "nameEn": "Mughal Empire",
+    "type": "period",
+    "startYear": 1526,
+    "endYear": 1857,
+    "datePrecision": "approximate",
+    "regions": ["south-asia", "central-asia"],
+    "genres": ["politics", "arts", "religion"],
+    "summary": "バーブルが建てた南アジアのイスラーム王朝。タージ・マハルなどを残した。",
+    "relatedIds": ["delhi-sultanate", "ottoman"],
+    "sources": [
+      {
+        "title": "Wikipedia: Mughal Empire",
+        "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "edo",
+    "name": "江戸幕府",
+    "nameEn": "Tokugawa shogunate",
+    "aliases": ["徳川幕府"],
+    "type": "period",
+    "startYear": 1603,
+    "endYear": 1868,
+    "datePrecision": "exact",
+    "regions": ["east-asia"],
+    "genres": ["politics", "society"],
+    "summary": "徳川家康が開いた武家政権。約260年にわたり日本を統治した。",
+    "relatedIds": ["ming", "meiji"],
+    "sources": [
+      {
+        "title": "Wikipedia: Tokugawa shogunate",
+        "url": "https://en.wikipedia.org/wiki/Tokugawa_shogunate"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "westphalia",
+    "name": "ウェストファリア条約",
+    "nameEn": "Peace of Westphalia",
+    "type": "event",
+    "startYear": 1648,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["war", "politics"],
+    "summary": "三十年戦争を終結させた講和条約群。",
+    "relatedIds": ["reformation"],
+    "sources": [
+      {
+        "title": "Wikipedia: Peace of Westphalia",
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "principia",
+    "name": "ニュートン『プリンキピア』",
+    "nameEn": "Philosophiæ Naturalis Principia Mathematica",
+    "type": "event",
+    "startYear": 1687,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["science", "people"],
+    "summary": "ニュートンが運動の法則と万有引力を体系化した著作を刊行した。",
+    "relatedIds": ["industrial-revolution"],
+    "sources": [
+      {
+        "title": "Wikipedia: Philosophiæ Naturalis Principia Mathematica",
+        "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "industrial-revolution",
+    "name": "産業革命",
+    "nameEn": "Industrial Revolution",
+    "type": "process",
+    "startYear": 1760,
+    "endYear": 1840,
+    "datePrecision": "approximate",
+    "regions": ["europe", "north-america"],
+    "genres": ["science", "economy", "society"],
+    "summary": "イギリスに始まる機械化・工業化の過程。範囲は第一次産業革命の目安。",
+    "relatedIds": ["principia", "atlantic-slave-trade"],
+    "sources": [
+      {
+        "title": "Wikipedia: Industrial Revolution",
+        "url": "https://en.wikipedia.org/wiki/Industrial_Revolution"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "us-independence",
+    "name": "アメリカ独立宣言",
+    "nameEn": "United States Declaration of Independence",
+    "type": "event",
+    "startYear": 1776,
+    "datePrecision": "exact",
+    "regions": ["north-america"],
+    "genres": ["politics", "war"],
+    "summary": "北米13植民地がイギリスからの独立を宣言した。",
+    "relatedIds": ["french-revolution", "haitian-revolution"],
+    "sources": [
+      {
+        "title": "Wikipedia: United States Declaration of Independence",
+        "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "first-fleet",
+    "name": "第一船団のシドニー湾到着",
+    "nameEn": "First Fleet",
+    "type": "event",
+    "startYear": 1788,
+    "datePrecision": "exact",
+    "regions": ["oceania", "europe"],
+    "genres": ["exploration", "politics"],
+    "summary": "イギリスの流刑植民船団が到着し、オーストラリアへの植民が始まった。先住民社会に大きな影響を与えた。",
+    "relatedIds": ["polynesian-aotearoa"],
+    "sources": [
+      {
+        "title": "Wikipedia: First Fleet",
+        "url": "https://en.wikipedia.org/wiki/First_Fleet"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "french-revolution",
+    "name": "フランス革命",
+    "nameEn": "French Revolution",
+    "type": "event",
+    "startYear": 1789,
+    "endYear": 1799,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["politics", "society"],
+    "summary": "絶対王政を倒し、人権宣言を発した革命。",
+    "relatedIds": ["us-independence", "haitian-revolution"],
+    "sources": [
+      {
+        "title": "Wikipedia: French Revolution",
+        "url": "https://en.wikipedia.org/wiki/French_Revolution"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "haitian-revolution",
+    "name": "ハイチ革命",
+    "nameEn": "Haitian Revolution",
+    "type": "event",
+    "startYear": 1791,
+    "endYear": 1804,
+    "datePrecision": "exact",
+    "regions": ["mesoamerica-caribbean"],
+    "genres": ["politics", "war", "society"],
+    "summary": "フランス領サン＝ドマングで奴隷とされた人々が蜂起し、独立国家ハイチが成立した。",
+    "relatedIds": [
+      "french-revolution",
+      "atlantic-slave-trade",
+      "latin-american-independence"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Haitian Revolution",
+        "url": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "latin-american-independence",
+    "name": "ラテンアメリカ諸国の独立",
+    "nameEn": "Spanish American wars of independence",
+    "type": "process",
+    "startYear": 1808,
+    "endYear": 1826,
+    "datePrecision": "approximate",
+    "regions": ["south-america", "mesoamerica-caribbean"],
+    "genres": ["politics", "war"],
+    "summary": "スペイン・ポルトガル領アメリカで相次いだ独立運動。",
+    "relatedIds": ["haitian-revolution", "french-revolution"],
+    "sources": [
+      {
+        "title": "Wikipedia: Spanish American wars of independence",
+        "url": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "opium-war",
+    "name": "アヘン戦争",
+    "nameEn": "First Opium War",
+    "type": "event",
+    "startYear": 1839,
+    "endYear": 1842,
+    "datePrecision": "exact",
+    "regions": ["east-asia", "europe"],
+    "genres": ["war", "economy"],
+    "summary": "清とイギリスの戦争。南京条約により香港割譲などが定められた。開戦年は1839年・1840年の両方の表記がある。",
+    "relatedIds": ["industrial-revolution", "meiji"],
+    "sources": [
+      {
+        "title": "Wikipedia: First Opium War",
+        "url": "https://en.wikipedia.org/wiki/First_Opium_War"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "origin-of-species",
+    "name": "ダーウィン『種の起源』",
+    "nameEn": "On the Origin of Species",
+    "type": "event",
+    "startYear": 1859,
+    "datePrecision": "exact",
+    "regions": ["europe"],
+    "genres": ["science", "people"],
+    "summary": "自然選択による進化論を提示した著作が刊行された。",
+    "relatedIds": ["principia"],
+    "sources": [
+      {
+        "title": "Wikipedia: On the Origin of Species",
+        "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "meiji",
+    "name": "明治維新",
+    "nameEn": "Meiji Restoration",
+    "type": "event",
+    "startYear": 1868,
+    "datePrecision": "approximate",
+    "regions": ["east-asia"],
+    "genres": ["politics", "society"],
+    "summary": "江戸幕府に代わり天皇中心の近代国家体制へ移行した一連の変革。1868年を代表年とする。",
+    "relatedIds": ["edo", "opium-war"],
+    "sources": [
+      {
+        "title": "Wikipedia: Meiji Restoration",
+        "url": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "berlin-conference",
+    "name": "ベルリン会議（アフリカ分割）",
+    "nameEn": "Berlin Conference",
+    "type": "event",
+    "startYear": 1884,
+    "endYear": 1885,
+    "datePrecision": "exact",
+    "regions": ["europe", "sub-saharan-africa"],
+    "genres": ["politics", "war"],
+    "summary": "ヨーロッパ列強がアフリカの植民地化の原則を取り決めた会議。",
+    "relatedIds": ["ww1"],
+    "sources": [
+      {
+        "title": "Wikipedia: Berlin Conference",
+        "url": "https://en.wikipedia.org/wiki/Berlin_Conference"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ww1",
+    "name": "第一次世界大戦",
+    "nameEn": "World War I",
+    "type": "event",
+    "startYear": 1914,
+    "endYear": 1918,
+    "datePrecision": "exact",
+    "regions": [
+      "europe",
+      "west-asia-north-africa",
+      "sub-saharan-africa",
+      "east-asia",
+      "north-america",
+      "oceania"
+    ],
+    "genres": ["war"],
+    "summary": "ヨーロッパを主戦場とした世界規模の戦争。",
+    "relatedIds": ["ottoman", "ww2"],
+    "sources": [
+      {
+        "title": "Wikipedia: World War I",
+        "url": "https://en.wikipedia.org/wiki/World_War_I"
+      }
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "ww2",
+    "name": "第二次世界大戦",
+    "nameEn": "World War II",
+    "type": "event",
+    "startYear": 1939,
+    "endYear": 1945,
+    "datePrecision": "exact",
+    "regions": [
+      "europe",
+      "east-asia",
+      "southeast-asia",
+      "west-asia-north-africa",
+      "oceania",
+      "north-america"
+    ],
+    "genres": ["war"],
+    "summary": "枢軸国と連合国の間で戦われた世界規模の戦争。",
+    "relatedIds": ["ww1"],
+    "sources": [
+      {
+        "title": "Wikipedia: World War II",
+        "url": "https://en.wikipedia.org/wiki/World_War_II"
+      }
+    ],
+    "reviewed": false
+  }
+]
