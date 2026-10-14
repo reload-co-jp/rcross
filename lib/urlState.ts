@@ -1,7 +1,7 @@
 import { GENRES, REGIONS } from "./data"
 import { isValidYear } from "./years"
 
-export type LaneMode = "region" | "genre"
+export type LaneMode = "region" | "genre" | "compare"
 
 export type ViewState = {
   from: number
@@ -10,6 +10,8 @@ export type ViewState = {
   regions: string[]
   genres: string[]
   lane: LaneMode
+  /** 比較モードで並べるレーン ("r:地域ID" / "g:ジャンルID")。順序を保持 */
+  compare: string[]
   selected: string | null
 }
 
@@ -25,7 +27,15 @@ export const DEFAULT_VIEW: ViewState = {
   regions: REGIONS.map((r) => r.id),
   genres: GENRES.map((g) => g.id),
   lane: "region",
+  compare: ["r:east-asia", "r:europe", "g:science"],
   selected: null,
+}
+
+const isLaneKey = (k: string) => {
+  const [kind, id] = k.split(":")
+  return (kind === "r" ? REGIONS : kind === "g" ? GENRES : []).some(
+    (x) => x.id === id
+  )
 }
 
 const list = (v: string | null, allowed: readonly { id: string }[]) =>
@@ -49,7 +59,12 @@ export const parseView = (search: string): ViewState => {
     pxPerYear: z >= MIN_ZOOM && z <= MAX_ZOOM ? z : DEFAULT_VIEW.pxPerYear,
     regions: list(p.get("r"), REGIONS) ?? DEFAULT_VIEW.regions,
     genres: list(p.get("g"), GENRES) ?? DEFAULT_VIEW.genres,
-    lane: p.get("lane") === "genre" ? "genre" : "region",
+    lane:
+      (["genre", "compare"] as const).find((m) => m === p.get("lane")) ??
+      "region",
+    compare: p.has("c")
+      ? [...new Set(p.get("c")!.split(",").filter(isLaneKey))]
+      : DEFAULT_VIEW.compare,
     selected: p.get("sel"),
   }
 }
@@ -64,6 +79,7 @@ export const serializeView = (v: ViewState): string => {
   if (v.regions.length !== d.regions.length) p.set("r", v.regions.join(","))
   if (v.genres.length !== d.genres.length) p.set("g", v.genres.join(","))
   if (v.lane !== d.lane) p.set("lane", v.lane)
+  if (v.compare.join() !== d.compare.join()) p.set("c", v.compare.join(","))
   if (v.selected) p.set("sel", v.selected)
   const s = p.toString()
   return s ? `?${s}` : ""

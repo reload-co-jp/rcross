@@ -18,6 +18,8 @@ export type MarkerBox = {
   /** 時点型が期間を持つ場合の長さ (0 なら点) */
   height: number
   showLabel: boolean
+  /** 推定幅 (min〜max)。幅が指定されていなければ null */
+  uncertain: { top: number; height: number } | null
 }
 
 export type LaneLayout = {
@@ -41,6 +43,17 @@ export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
 
   for (const item of byStart) {
     const end = itemEnd(item)
+    // 推定幅: 最も早い開始〜最も遅い終了 (startYearMax のみの時点型も含む)
+    const uncertain = scale.span(
+      item.startYearMin ?? item.startYear,
+      Math.max(end, item.endYearMax ?? end, item.startYearMax ?? end)
+    )
+    const hasRange = [
+      item.startYearMin,
+      item.startYearMax,
+      item.endYearMin,
+      item.endYearMax,
+    ].some((y) => y !== undefined)
     if (item.type === "event") {
       const { top, height } = scale.span(item.startYear, end)
       const showLabel = top - lastLabelTop >= LABEL_GAP_PX
@@ -50,6 +63,7 @@ export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
         top,
         height: end > item.startYear ? height : 0,
         showLabel,
+        uncertain: hasRange ? uncertain : null,
       })
       continue
     }
@@ -58,10 +72,6 @@ export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
     if (column === -1) column = columnEnds.length
     columnEnds[column] = toAstronomical(item.endYearMax ?? end)
     const span = scale.span(item.startYear, end)
-    const uncertain = scale.span(
-      item.startYearMin ?? item.startYear,
-      item.endYearMax ?? end
-    )
     bands.push({
       item,
       column,

@@ -23,6 +23,7 @@ import {
   PRECISION_LABEL,
 } from "@/lib/data"
 import { filterItems, searchItems } from "@/lib/filter"
+import { laneDefs } from "@/lib/lanes"
 import { layoutLane } from "@/lib/layout"
 import { createScale, ticks, tickStep } from "@/lib/scale"
 import {
@@ -51,6 +52,17 @@ const COL_W = 18
 const EVENT_W = 140
 const LANE_MIN_W = 170
 
+const LANE_MODE_LABEL = {
+  region: "地域別",
+  genre: "ジャンル別",
+  compare: "比較",
+}
+// 比較モードの選択肢: 地域とジャンルを混在 (ID は "r:" / "g:" 接頭辞付き)。選択順にレーンを並べる
+const COMPARE_OPTIONS = [
+  ...REGIONS.map((r) => ({ id: `r:${r.id}`, name: r.name })),
+  ...GENRES.map((g) => ({ ...g, id: `g:${g.id}` })),
+]
+
 const clampZoom = (z: number) => Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, z))
 const color = (it: HistoryItem) => genreOf(it.genres[0])!.color
 const label = (it: HistoryItem) =>
@@ -65,6 +77,7 @@ export const Timeline: FC = () => {
   // ズーム時に保つ位置 (天文年の小数, ビューポート内のpx) / 選択時にスクロールする項目
   const anchorRef = useRef<{ a: number; px: number } | null>(null)
   const scrollToRef = useRef<string | null>(null)
+  const pinchRef = useRef<{ dist: number; zoom: number } | null>(null)
 
   // URL → 状態 (静的エクスポートのため初回描画後に読む)
   useEffect(() => {
@@ -75,9 +88,13 @@ export const Timeline: FC = () => {
     setReady(true)
   }, [])
 
+  // 連続ズーム (ピンチ等) で古い倍率を参照しないよう、描画確定と同時に更新
+  useLayoutEffect(() => {
+    viewRef.current = view
+  }, [view])
+
   // 状態 → URL (履歴を増やさず置換)
   useEffect(() => {
-    viewRef.current = view
     if (ready)
       window.history.replaceState(
         null,
@@ -93,25 +110,17 @@ export const Timeline: FC = () => {
   const visible = useMemo(() => filterItems(ITEMS, view), [view])
 
   const lanes = useMemo(() => {
-    const defs =
-      view.lane === "region"
-        ? REGIONS.filter((r) => view.regions.includes(r.id))
-        : GENRES.filter((g) => view.genres.includes(g.id))
     const out = []
     let x = 0
-    for (const def of defs) {
-      const items = visible.filter((it) =>
-        view.lane === "region"
-          ? it.regions.includes(def.id as never)
-          : it.genres.includes(def.id as never)
-      )
+    for (const def of laneDefs(view)) {
+      const items = visible.filter(def.match)
       const layout = layoutLane(items, scale)
       const width = Math.max(LANE_MIN_W, layout.columns * COL_W + EVENT_W)
       out.push({ def, layout, x, width })
       x += width
     }
     return out
-  }, [visible, scale, view.lane, view.regions, view.genres])
+  }, [visible, scale, view])
   const lanesW = lanes.reduce((n, l) => n + l.width, 0)
 
   // 範囲型が複数レーンにまたがる場合、開始位置を結ぶ線
@@ -169,11 +178,7 @@ export const Timeline: FC = () => {
     const item = id && ITEM_BY_ID.get(id)
     if (item) {
       scrollToRef.current = null
-      const lane = lanes.find((l) =>
-        view.lane === "region"
-          ? item.regions.includes(l.def.id as never)
-          : item.genres.includes(l.def.id as never)
-      )
+      const lane = lanes.find((l) => l.def.match(item))
       el.scrollTo({
         top: Math.max(
           0,
@@ -182,7 +187,7 @@ export const Timeline: FC = () => {
         left: lane ? Math.max(0, lane.x - 40) : el.scrollLeft,
       })
     }
-  }, [scale, lanes, view.from, view.pxPerYear, view.lane])
+  }, [scale, lanes, view.from, view.pxPerYear])
 
   // Ctrl/⌘ + ホイール (トラックパッドのピンチ含む) でズーム
   useEffect(() => {
@@ -197,8 +202,40 @@ export const Timeline: FC = () => {
         e.clientY - rect.top
       )
     }
+    // タッチ端末の2本指ピンチ。開始時の距離・倍率を基準に拡縮する
+    // (リスナーは毎描画で付け直すため、ピンチ状態は ref に保持)
+    const dist = (t: TouchList) =>
+      Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY)
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length === 2)
+        pinchRef.current = {
+          dist: dist(e.touches),
+          zoom: viewRef.current.pxPerYear,
+        }
+    }
+    const onTouchMove = (e: TouchEvent) => {
+      const pinch = pinchRef.current
+      if (!pinch || e.touches.length !== 2) return
+      e.preventDefault()
+      const rect = el.getBoundingClientRect()
+      const midY = (e.touches[0].clientY + e.touches[1].clientY) / 2
+      zoomTo((pinch.zoom * dist(e.touches)) / pinch.dist, midY - rect.top)
+    }
+    const onTouchEnd = (e: TouchEvent) => {
+      if (e.touches.length < 2) pinchRef.current = null
+    }
     el.addEventListener("wheel", onWheel, { passive: false })
-    return () => el.removeEventListener("wheel", onWheel)
+    el.addEventListener("touchstart", onTouchStart, { passive: true })
+    el.addEventListener("touchmove", onTouchMove, { passive: false })
+    el.addEventListener("touchend", onTouchEnd)
+    el.addEventListener("touchcancel", onTouchEnd)
+    return () => {
+      el.removeEventListener("wheel", onWheel)
+      el.removeEventListener("touchstart", onTouchStart)
+      el.removeEventListener("touchmove", onTouchMove)
+      el.removeEventListener("touchend", onTouchEnd)
+      el.removeEventListener("touchcancel", onTouchEnd)
+    }
   })
 
   /** 項目を選択し、必要ならフィルターを広げて表示範囲へ移動 */
@@ -211,11 +248,17 @@ export const Timeline: FC = () => {
     const genres = item.genres.some((g) => view.genres.includes(g))
       ? view.genres
       : [...view.genres, ...item.genres]
+    // 比較モードで該当レーンが無ければ、項目の主地域レーンを追加
+    const compare =
+      view.lane === "compare" && !laneDefs(view).some((l) => l.match(item))
+        ? [...view.compare, `r:${item.regions[0]}`]
+        : view.compare
     scrollToRef.current = item.id
     setView({
       ...view,
       regions,
       genres,
+      compare,
       from: Math.min(view.from, item.startYear),
       to: Math.max(view.to, itemEnd(item)),
       selected: item.id,
@@ -299,7 +342,7 @@ export const Timeline: FC = () => {
           <legend style={{ float: "left", marginRight: ".35rem" }}>
             レーン
           </legend>
-          {(["region", "genre"] as const).map((m) => (
+          {(["region", "genre", "compare"] as const).map((m) => (
             <label key={m}>
               <input
                 type="radio"
@@ -307,11 +350,32 @@ export const Timeline: FC = () => {
                 checked={view.lane === m}
                 onChange={() => setView({ ...view, lane: m })}
               />
-              {m === "region" ? "地域別" : "ジャンル別"}
+              {LANE_MODE_LABEL[m]}
             </label>
           ))}
         </fieldset>
 
+        {view.lane === "compare" && (
+          <FilterDropdown
+            title="比較レーン"
+            options={COMPARE_OPTIONS}
+            selected={view.compare}
+            onToggle={(key) =>
+              setView({
+                ...view,
+                compare: view.compare.includes(key)
+                  ? view.compare.filter((k) => k !== key)
+                  : [...view.compare, key],
+              })
+            }
+            onAll={(all) =>
+              setView({
+                ...view,
+                compare: all ? COMPARE_OPTIONS.map((o) => o.id) : [],
+              })
+            }
+          />
+        )}
         <FilterDropdown
           title="地域"
           options={REGIONS}
@@ -404,12 +468,12 @@ export const Timeline: FC = () => {
               </div>
               {lanes.map((l) => (
                 <div
-                  key={l.def.id}
+                  key={l.def.key}
                   className={s.laneName}
                   style={{ width: l.width }}
                   title={l.def.name}
                 >
-                  {"symbol" in l.def && (
+                  {l.def.symbol && (
                     <span aria-hidden="true" style={{ color: l.def.color }}>
                       {l.def.symbol}{" "}
                     </span>
@@ -454,7 +518,7 @@ export const Timeline: FC = () => {
                 )}
                 {lanes.map((l) => (
                   <div
-                    key={l.def.id}
+                    key={l.def.key}
                     className={s.lane}
                     style={{ left: l.x, width: l.width, height: scale.height }}
                     role="list"
@@ -507,6 +571,18 @@ export const Timeline: FC = () => {
                       const isSel = m.item.id === view.selected
                       return (
                         <div role="listitem" key={m.item.id}>
+                          {m.uncertain && (
+                            <div
+                              className={s.markerUncertain}
+                              aria-hidden="true"
+                              style={{
+                                top: m.uncertain.top,
+                                height: Math.max(m.uncertain.height, 2),
+                                left: l.layout.columns * COL_W + 3,
+                                color: g.color,
+                              }}
+                            />
+                          )}
                           <button
                             type="button"
                             className={`${s.marker} ${isSel ? s.selected : ""}`}

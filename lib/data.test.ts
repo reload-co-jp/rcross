@@ -161,3 +161,48 @@ describe("url state", () => {
     expect(bad.regions).toEqual(["europe"])
   })
 })
+
+describe("event uncertainty", () => {
+  it("spans min to max for disputed events", () => {
+    const scale = createScale(-1000, 2000, 1)
+    const ev: HistoryItem = {
+      ...base,
+      type: "event",
+      startYear: -480,
+      endYear: undefined,
+      startYearMin: -563,
+      startYearMax: -400,
+    }
+    const [m] = layoutLane([ev], scale).markers
+    expect(m.uncertain!.top).toBe(scale.top(-563))
+    expect(m.uncertain!.top + m.uncertain!.height).toBe(scale.top(-400) + 1)
+    const [plain] = layoutLane(
+      [{ ...ev, startYearMin: undefined, startYearMax: undefined }],
+      scale
+    ).markers
+    expect(plain.uncertain).toBeNull()
+  })
+})
+
+describe("lanes", () => {
+  it("builds mixed lanes in compare mode", async () => {
+    const { laneDefs } = await import("./lanes")
+    const { DEFAULT_VIEW, parseView, serializeView } =
+      await import("./urlState")
+    const v = {
+      ...DEFAULT_VIEW,
+      lane: "compare" as const,
+      compare: ["g:war", "r:europe", "x:bad"],
+    }
+    const lanes = laneDefs(v)
+    expect(lanes.map((l) => l.key)).toEqual(["g:war", "r:europe"])
+    expect(lanes[0].match({ ...base, genres: ["war"] })).toBe(true)
+    expect(lanes[1].match({ ...base, regions: ["east-asia"] })).toBe(false)
+    expect(
+      laneDefs({ ...DEFAULT_VIEW, regions: ["europe"] }).map((l) => l.key)
+    ).toEqual(["r:europe"])
+    // URL 往復で順序維持・不正キー除去
+    expect(parseView(serializeView(v)).compare).toEqual(["g:war", "r:europe"])
+    expect(parseView("?lane=compare&c=").compare).toEqual([])
+  })
+})
