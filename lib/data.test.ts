@@ -123,21 +123,6 @@ describe("lane layout", () => {
     expect(b.uncertainTop).toBe(scale.top(-200))
     expect(b.uncertainTop + b.uncertainHeight).toBe(scale.top(150) + 1)
   })
-
-  it("hides labels of crowded markers", () => {
-    const ev = (id: string, y: number): HistoryItem => ({
-      ...base,
-      id,
-      type: "event",
-      startYear: y,
-      endYear: undefined,
-    })
-    const { markers } = layoutLane(
-      [ev("a", 1), ev("b", 5), ev("c", 100)],
-      scale
-    )
-    expect(markers.map((m) => m.showLabel)).toEqual([true, false, true])
-  })
 })
 
 describe("url state", () => {

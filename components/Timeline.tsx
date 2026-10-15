@@ -48,7 +48,7 @@ import s from "./timeline.module.css"
 
 const AXIS_W = 72
 const HEADER_H = 36
-const COL_W = 18
+const COL_W = 26
 const EVENT_W = 140
 const LANE_MIN_W = 170
 
@@ -559,7 +559,7 @@ export const Timeline: FC = () => {
                             aria-pressed={isSel}
                             onClick={() => select(b.item.id)}
                           >
-                            {b.height > 40 && (
+                            {b.height >= 16 && (
                               <span className={s.bandLabel}>{b.item.name}</span>
                             )}
                           </button>
@@ -599,14 +599,12 @@ export const Timeline: FC = () => {
                             <span className={s.glyph} aria-hidden="true">
                               {g.symbol}
                             </span>
-                            {(m.showLabel || isSel) && (
-                              <span
-                                className={s.markerLabel}
-                                style={{ color: "var(--ink)" }}
-                              >
-                                {m.item.name}
-                              </span>
-                            )}
+                            <span
+                              className={s.markerLabel}
+                              style={{ color: "var(--ink)" }}
+                            >
+                              {m.item.name}
+                            </span>
                             {m.height > 8 && (
                               <span
                                 className={s.markerSpan}

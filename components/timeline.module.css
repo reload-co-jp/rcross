@@ -216,7 +216,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow: clip;
+  /* ラベルは帯からはみ出してよい (重なり許容) */
+  overflow: visible;
   padding: 0;
   position: absolute;
   z-index: 2;
@@ -237,13 +238,15 @@
 }
 
 .bandLabel {
-  font-size: 0.72rem;
-  line-height: 13px;
-  max-height: 100%;
-  overflow: hidden;
-  padding: 3px 0;
+  background: var(--surface);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--c) 50%, white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 16px;
+  margin-left: 1px;
+  padding: 6px 1px;
   position: sticky;
-  text-overflow: ellipsis;
   top: 36px;
   white-space: nowrap;
   writing-mode: vertical-rl;
@@ -271,6 +274,13 @@
   z-index: 3;
 }
 
+.band:hover,
+.band:focus-visible,
+.marker:hover,
+.marker:focus-visible {
+  z-index: 5;
+}
+
 .marker:hover .markerLabel,
 .marker:focus-visible .markerLabel {
   background: var(--surface);
@@ -289,7 +299,11 @@
 }
 
 .markerLabel {
-  font-size: 0.72rem;
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  line-height: 14px;
+  padding: 2px 6px;
   max-width: 120px;
   overflow: hidden;
   text-overflow: ellipsis;

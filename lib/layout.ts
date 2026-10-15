@@ -17,7 +17,6 @@ export type MarkerBox = {
   top: number
   /** 時点型が期間を持つ場合の長さ (0 なら点) */
   height: number
-  showLabel: boolean
   /** 推定幅 (min〜max)。幅が指定されていなければ null */
   uncertain: { top: number; height: number } | null
 }
@@ -29,9 +28,8 @@ export type LaneLayout = {
 }
 
 const MIN_BAND_PX = 4
-const LABEL_GAP_PX = 16
 
-/** 1レーン内の配置。帯は重ならない列に詰め、マーカーは近接するラベルを省略 */
+/** 1レーン内の配置。帯は重ならない列に詰め、マーカーは全ラベル表示 (重なり許容) */
 export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
   const byStart = [...items].sort(
     (a, b) => a.startYear - b.startYear || itemEnd(b) - itemEnd(a)
@@ -39,7 +37,6 @@ export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
   const columnEnds: number[] = [] // 各列の最後の帯の終了 (天文年)
   const bands: BandBox[] = []
   const markers: MarkerBox[] = []
-  let lastLabelTop = -Infinity
 
   for (const item of byStart) {
     const end = itemEnd(item)
@@ -56,13 +53,10 @@ export const layoutLane = (items: HistoryItem[], scale: Scale): LaneLayout => {
     ].some((y) => y !== undefined)
     if (item.type === "event") {
       const { top, height } = scale.span(item.startYear, end)
-      const showLabel = top - lastLabelTop >= LABEL_GAP_PX
-      if (showLabel) lastLabelTop = top
       markers.push({
         item,
         top,
         height: end > item.startYear ? height : 0,
-        showLabel,
         uncertain: hasRange ? uncertain : null,
       })
       continue
